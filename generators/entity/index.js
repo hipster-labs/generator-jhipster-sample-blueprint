@@ -18,7 +18,6 @@
  */
 /* eslint-disable consistent-return */
 const chalk = require('chalk');
-const _ = require('lodash');
 const EntityGenerator = require('generator-jhipster/generators/entity');
 
 
