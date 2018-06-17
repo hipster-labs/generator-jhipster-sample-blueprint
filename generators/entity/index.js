@@ -19,12 +19,10 @@
 /* eslint-disable consistent-return */
 const chalk = require('chalk');
 const _ = require('lodash');
-const ClientGenerator = require('generator-jhipster/generators/client');
-const prompts = require('./prompts');
-const writeFiles = require('./files').writeFiles;
+const EntityGenerator = require('generator-jhipster/generators/entity');
 
 
-module.exports = class extends ClientGenerator {
+module.exports = class extends EntityGenerator {
     constructor(args, opts) {
         super(args, Object.assign({ fromBlueprint: true }, opts)); // fromBlueprint variable is important
 
@@ -36,49 +34,26 @@ module.exports = class extends ClientGenerator {
 
         this.configOptions = jhContext.configOptions || {};
 
-        jhContext.setupClientOptions(this, jhContext);
+        jhContext.setupEntityOptions(this, jhContext, this);
     }
 
     get initializing() {
-        // any method beginning with _ can be reused from the superclass
         return super._initializing();
     }
 
     get prompting() {
-        return {
-            askForClient: prompts.askForClient,
-            askForClientSideOpts: prompts.askForClientSideOpts,
-
-            setSharedConfigOptions() {
-                this.configOptions.lastQuestion = this.currentQuestion;
-                this.configOptions.totalQuestions = this.totalQuestions;
-                this.configOptions.clientFramework = this.clientFramework;
-                this.configOptions.useSass = this.useSass;
-            }
-        };
+        return super._prompting();
     }
 
     get configuring() {
         return super._configuring();
     }
 
-    get default() {
-        return super._default();
-    }
-
     get writing() {
-        return {
-            write() {
-                writeFiles.call(this);
-            }
-        };
+        return super._writing();
     }
 
     get install() {
         return super._install();
-    }
-
-    get end() {
-        return super._end();
     }
 };
