@@ -1,32 +1,24 @@
 {
   "name": "generator-jhipster-sample-blueprint",
-  "version": "4.9.0",
-  "description": "Spring Boot + Angular in one handy generator",
+  "version": "0.0.0",
+  "description": "A sample blueprint for JHipster",
   "files": [
     "generators"
   ],
   "keywords": [
     "yeoman-generator",
-    "Java",
-    "Spring",
-    "Spring Boot",
-    "Spring Security",
-    "JPA",
-    "Hibernate",
-    "AngularJS",
-    "Angular",
-    "Twitter Bootstrap"
+    "jhipster-blueprint"
   ],
   "homepage": "http://www.jhipster.tech/",
   "bugs": "https://github.com/jhipster/generator-jhipster/issues",
   "author": {
-    "name": "Julien Dubois",
-    "email": "",
-    "url": "https://github.com/jdubois"
+    "name": "Deepu KS",
+    "email": "d4udts@gmail.com",
+    "url": "https://github.com/deepu105"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jhipster/generator-jhipster.git"
+    "url": "git://github.com/hipster-labs/generator-jhipster-sample-blueprint.git"
   },
   "scripts": {
     "lint": "eslint .",
