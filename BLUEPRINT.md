@@ -1,6 +1,6 @@
 ## Blueprint rules and format
 
-1. Name should be of format generator-jhipster-<blueprintname>
+1. Name of the generator should be of format generator-jhipster-<blueprintname>
 2. Should be installed either globally or locally
 3. Should have keywords <jhipster-blueprint> in package.json
 
