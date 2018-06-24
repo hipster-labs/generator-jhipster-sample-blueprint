@@ -34,8 +34,6 @@
   },
   "dependencies": {
     "chalk": "2.4.1",
-    "commander": "2.15.1",
-    "didyoumean": "1.2.1",
     "ejs": "2.6.1",
     "glob": "7.1.2",
     "gulp-filter": "5.1.0",
@@ -50,7 +48,6 @@
     "randexp": "0.4.9",
     "semver": "5.5.0",
     "shelljs": "0.8.2",
-    "tabtab": "2.2.2",
     "through2": "2.0.3",
     "generator-jhipster": "5.0.1",
     "yeoman-environment": "2.3.0",
